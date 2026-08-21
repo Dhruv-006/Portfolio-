@@ -16,7 +16,7 @@ export function ProjectMedia({ src, alt, className = "", priority = false }: Pro
           alt={alt}
           fill
           priority={priority}
-          className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
+          className="object-contain transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
         />
       ) : (

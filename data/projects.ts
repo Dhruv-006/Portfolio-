@@ -9,8 +9,8 @@ export const projects: Project[] = [
     description: "Built a hyperlocal shopping and delivery application using Flutter and Firebase, featuring Firebase authentication, AI-assisted product search, modern UI, and shop discovery.",
     role: "Developer",
     technologies: ["Flutter", "Firebase", "Dart", "AI-assisted Search"],
-    coverImage: null, // TODO: Add cover image path
-    gallery: [], // TODO: Add gallery image paths
+    coverImage: "/images/projects/DukanWala.png",
+    gallery: ["/images/projects/DukanWala.png"],
     liveUrl: null, // TODO: Add live URL
     githubUrl: null, // TODO: Add GitHub URL
     featured: true,
@@ -24,8 +24,8 @@ export const projects: Project[] = [
     description: "Built an AI-powered finance coaching application that combines personal finance management with an intelligent conversational assistant. The application focuses on helping users track and understand their financial activity, analyze spending patterns, and receive personalized guidance through an AI-driven experience. The project combines financial data management, analytics, and AI assistance into a single user-focused platform.",
     role: "Developer",
     technologies: ["Python", "AI / LLM", "Financial Data Analysis", "Streamlit", "Firebase"],
-    coverImage: null, // TODO: Add cover image path
-    gallery: [], // TODO: Add gallery image paths
+    coverImage: "/images/projects/AI Finance Coach.png",
+    gallery: ["/images/projects/AI Finance Coach.png"],
     liveUrl: null, // TODO: Add live URL
     githubUrl: null, // TODO: Add GitHub URL
     featured: true,
@@ -39,8 +39,8 @@ export const projects: Project[] = [
     description: "Built a Flutter-based mood tracking application with automatic mood logging, personal journaling, mood history, monthly analytics, mood streaks, and interactive insights. The app also includes Firebase authentication and Firestore integration, local data handling with Hive, responsive UI, and a structured mood system with centralized mood icons, colors, and states.",
     role: "Developer",
     technologies: ["Flutter", "Dart", "Material Design 3", "Firebase Authentication", "Cloud Firestore", "Hive", "Provider", "fl_chart"],
-    coverImage: null, // TODO: Add cover image path
-    gallery: [], // TODO: Add gallery image paths
+    coverImage: "/images/projects/Moodify.png",
+    gallery: ["/images/projects/Moodify.png"],
     liveUrl: null, // TODO: Add live URL
     githubUrl: null, // TODO: Add GitHub URL
     featured: true,
@@ -54,8 +54,8 @@ export const projects: Project[] = [
     description: "Developed an Android finance management application focused on expense tracking and financial statistics. Implemented categorized transaction management with Daily, Weekly, and Monthly filters, along with transaction history, summary cards, analytics dashboards, and a clean Material Design 3 interface.",
     role: "Developer",
     technologies: ["Java", "Firebase", "Android Studio", "Material Design 3"],
-    coverImage: null, // TODO: Add cover image path
-    gallery: [], // TODO: Add gallery image paths
+    coverImage: "/images/projects/DhanRakshak.png",
+    gallery: ["/images/projects/DhanRakshak.png"],
     liveUrl: null, // TODO: Add live URL
     githubUrl: null, // TODO: Add GitHub URL
     featured: true,
@@ -69,8 +69,8 @@ export const projects: Project[] = [
     description: "Built a sign language recognition system using MediaPipe for hand landmark detection and a machine learning model for gesture classification. The system uses a Flask backend to process and serve the recognition functionality, combining computer vision and machine learning into an interactive application.",
     role: "Developer",
     technologies: ["Python", "MediaPipe", "Flask", "Machine Learning", "RandomForestClassifier", "Computer Vision"],
-    coverImage: null, // TODO: Add cover image path
-    gallery: [], // TODO: Add gallery image paths
+    coverImage: "/images/projects/SignSpeak.png",
+    gallery: ["/images/projects/SignSpeak.png"],
     liveUrl: null, // TODO: Add live URL
     githubUrl: null, // TODO: Add GitHub URL
     featured: true,
