@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F7F4EC;
+  --color-paper: #FFFCF5;
+  --color-ink: #171512;
+  --color-muted: #6F6A61;
+  --color-saffron: #C87532;
+  --color-maroon: #6E2525;
+  --color-gold: #B08A45;
+  --color-night: #11100E;
+  --color-night-soft: #1B1916;
+  --color-night-text: #F4F0E7;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-noto-serif-devanagari), ui-serif, Georgia, serif;
+}
+
+:root {
+  --background: var(--color-ivory);
+  --foreground: var(--color-ink);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-saffron);
+  color: var(--color-paper);
+}
+
+/* Reduced Motion fallback globally if needed, though Lenis will handle smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+
+/* Safe viewport height: uses svh where supported, falls back to vh */
+.h-screen-safe {
+  height: 100vh;
+}
+@supports (height: 100svh) {
+  .h-screen-safe {
+    height: 100svh;
+  }
+}
+
+/* Touch-device hover guard: elements with this class only show on hover-capable devices */
+@media (hover: none) {
+  .hover-only {
+    display: none !important;
+  }
+}
+
+/* On touch devices, disable hover-triggered visual changes for interactive elements */
+@media (hover: none) and (pointer: coarse) {
+  .touch-show {
+    opacity: 1 !important;
+  }
+  /* Prevent HoverWord English text from disappearing on touch devices */
+  .hover-word-eng {
+    opacity: 1 !important;
+  }
+  /* Show project title underline on touch (no hover needed) */
+  .touch-underline {
+    transform: translateX(0) !important;
+  }
+}
+
+/* Subtle Paper Texture (SVG Noise) */
+.paper-texture {
+  position: relative;
+}
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.25;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+

@@ -1,0 +1,19 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warm ivory background for visibility on all browser tabs -->
+  <rect width="48" height="48" rx="10" fill="#F3F2F0" />
+  <!-- Minimalist Shri Logo -->
+  <g stroke="#171512" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Shirorekha (Top horizontal bar) -->
+    <path d="M 9 14 H 39" />
+    <!-- Main vertical stem -->
+    <path d="M 25 14 V 38" />
+    <!-- Right vertical stem (i-matra) -->
+    <path d="M 35 14 V 38" />
+    <!-- Matra curve -->
+    <path d="M 25 14 C 25 2, 35 2, 35 14" />
+    <!-- Left loop (shr) -->
+    <path d="M 25 25 L 17 25 C 11 25, 11 15, 17 15 C 21 15, 23 19, 15 27 L 9 37" />
+    <!-- Diagonal stroke (ra) -->
+    <path d="M 20 25 L 15 37" />
+  </g>
+</svg>
