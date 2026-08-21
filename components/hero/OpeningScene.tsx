@@ -79,7 +79,12 @@ export function OpeningScene() {
       >
         <h1 
           className="font-display leading-none text-[var(--color-ink)]"
-          style={{ fontSize: "clamp(100px, 25vw, 400px)" }}
+          style={{ 
+            fontSize: "clamp(100px, 25vw, 400px)",
+            whiteSpace: "nowrap",
+            letterSpacing: "0px",
+            fontVariantLigatures: "normal"
+          }}
         >
           ॥ श्री ॥
         </h1>
@@ -104,27 +109,27 @@ export function OpeningScene() {
       {/* Portrait Reveal */}
       <PortraitReveal
         ref={portraitRef}
-        className="absolute z-20 w-[55vw] max-w-[200px] sm:max-w-[240px] md:max-w-[300px] lg:max-w-[360px] xl:max-w-[420px]"
+        className="absolute z-20 w-[55vw] max-w-[200px] sm:max-w-[240px] md:max-w-[300px] lg:max-w-[360px] xl:max-w-[420px] opacity-0"
       />
 
       {/* Identity Content — stacked below center on mobile, editorial on desktop */}
       <div className="absolute z-30 flex flex-col items-center text-center md:items-start md:text-left bottom-[10%] sm:bottom-auto sm:mt-0 md:mt-0 md:ml-[-30vw] xl:ml-[-40vw] px-4 sm:px-6 w-full sm:w-auto max-w-[90vw] sm:max-w-none">
         <h2
           ref={identityNameRef}
-          className="font-sans font-medium tracking-tight mb-2"
+          className="font-sans font-medium tracking-tight mb-2 opacity-0"
           style={{ fontSize: "clamp(1.75rem, 5vw, 3.75rem)" }}
         >
           Dhruv Tapaniya.
         </h2>
         <p
           ref={identityRoleRef}
-          className="font-sans text-xs sm:text-sm md:text-lg text-[var(--color-muted)] tracking-wider uppercase mb-4 sm:mb-6"
+          className="font-sans text-xs sm:text-sm md:text-lg text-[var(--color-muted)] tracking-wider uppercase mb-4 sm:mb-6 opacity-0"
         >
           [ROLE TO CONFIRM]
         </p>
         <p
           ref={identityTaglineRef}
-          className="font-display italic text-[var(--color-saffron)]"
+          className="font-display italic text-[var(--color-saffron)] opacity-0"
           style={{ fontSize: "clamp(1.125rem, 3vw, 1.875rem)" }}
         >
           From Roots to Code.

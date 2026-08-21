@@ -71,7 +71,7 @@ export function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative w-full min-h-screen bg-[var(--color-paper)] flex flex-col items-center justify-between pt-16 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden border-t border-[var(--color-gold)]/10 paper-texture"
+      className="relative w-full min-h-screen bg-[var(--color-paper)] flex flex-col items-center justify-between pt-16 sm:pt-24 pb-24 sm:pb-32 md:pb-40 px-4 sm:px-6 md:px-12 lg:px-24 overflow-hidden border-t border-[var(--color-gold)]/10 paper-texture"
     >
       <div
         ref={contentRef}
@@ -118,12 +118,17 @@ export function ContactSection() {
       {/* Closing Shri Symbol and Quote — fluid sizing */}
       <div
         ref={shriRef}
-        className="flex flex-col items-center justify-center select-none pointer-events-none mt-16 sm:mt-24 mb-0 w-full overflow-hidden"
+        className="flex flex-col items-center justify-center select-none pointer-events-none mt-24 sm:mt-32 md:mt-40 mb-0 w-full"
         aria-hidden="true"
       >
         <h2 
           className="font-display leading-none text-[var(--color-ink)]/5"
-          style={{ fontSize: "clamp(80px, 20vw, 240px)" }}
+          style={{ 
+            fontSize: "clamp(80px, 20vw, 240px)",
+            whiteSpace: "nowrap",
+            letterSpacing: "0px",
+            fontVariantLigatures: "normal"
+          }}
         >
           ॥ श्री ॥
         </h2>
